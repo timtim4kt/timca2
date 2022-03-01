@@ -42,11 +42,8 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
-<h2>Hi</h2>
 <aside>
 <!-- display a list of categories -->
-<h2>Categories</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
@@ -67,8 +64,6 @@ include('includes/header.php');
 <th>Image</th>
 <th>Name</th>
 <th>Price</th>
-<th>Delete</th>
-<th>Edit</th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
@@ -81,7 +76,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Delete">
+<input class="deleteButton" type="submit" value="Delete">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
 id="delete_record_form">
@@ -89,7 +84,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Edit">
+<input class="editButton" type="submit" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>

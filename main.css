@@ -8,11 +8,14 @@ body {
 .container {
     /* margin-top: 0; */
     font-family: Arial, Helvetica, sans-serif;
-    width: 1000px;
-    margin: 0 auto;
+    width: 80%;
+    margin: 50;
     background-color: white;
     border: 1px solid black;
     padding: .5em 2em;
+}
+title{
+    color:black;
 }
 
 header {
@@ -22,7 +25,7 @@ header {
 header h1 {
     margin: 0;
     padding: .5em 0;
-    color: black;
+    color: pink;
 }
 
 aside {
@@ -41,6 +44,7 @@ section {
     float: left;
     width: 800PX;
     padding-bottom: 1.5em;
+    padding-left: 6%;
 }
 footer {
     clear: both;
@@ -81,15 +85,119 @@ a:hover {
     color: rgb(208, 133, 4);
 }
 table {
-    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
     border-collapse: collapse;
+    border: 3px solid purple;
+    background-color: #ff33cc;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  thead, tfoot {
+    background: url(leopardskin.jpg);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid purple;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e495e4;
+  }
+  
+ .deleteButton{
+   background-color: red;
+   margin-right: 9px;
+   position: relative;
+   top: 1px;  
+   padding: 6px 9px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius:1.8 rem;;
+ }
+  
+ .deleteButton:hover{
+ padding: 7px 10px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius: 0.2rem;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;  
+  text-decoration: none;
+  cursor:pointer;
+
 }
-td, th {
-    border: 1px dashed black;
-    padding: .2em .5em .2em .5em;
-    vertical-align: top;
-    text-align: left;
+
+ .editButton{
+  background-color: orange;
+  margin-right: 9px;
+   position: relative;
+   top: 1px;  
+   padding: 6px 9px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius:1.8 rem;
 }
+ 
+.editButton:hover{
+  padding: 7px 10px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius: 0.2rem;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;  
+  text-decoration: none;
+  cursor:pointer;
+}
+
 form {
     margin: 0;
 }
@@ -97,9 +205,7 @@ br {
     clear: left;
 }
 /* the styles for classes */
-.right {
-    text-align: right;
-}
+
 .last_paragraph {
 	margin-bottom: 2em;	
 }
