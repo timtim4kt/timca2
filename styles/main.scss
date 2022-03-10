@@ -35,12 +35,7 @@ header h1 {
     padding-left:43%;
 }
 
-aside {
-    float: left;
-    width: 150px;
-    padding-top: 3%;
-    
-}
+
 nav ul {
     list-style-type: none;
     margin-left: 0;
@@ -57,12 +52,13 @@ nav ul li a{
     border: 2px solid black;
     border-radius: 0.2rem;
     text-decoration: none;
-    color:blue;
+    color:lightblue;
+    background-color: black;;
 }
 
 nav ul li a:hover{
-  color:lightblue;
-  background-color: black;
+  color:blue;
+  background-color: white;
 }
 
 section {
@@ -97,7 +93,7 @@ h1, h2 {
 
 table {
     table-layout: fixed;
-    width: 100%;
+    width: 120%;
     border-collapse: collapse;
     border: 3px solid black;
     background-color: rgb(214, 241, 250);

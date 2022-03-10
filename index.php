@@ -42,7 +42,7 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<aside>
+
 <!-- display a list of categories -->
 <nav>
 <ul>
@@ -54,7 +54,7 @@ include('includes/header.php');
 <?php endforeach; ?>
 </ul>
 </nav>          
-</aside>
+
 
 <section>
 <!-- display a table of records -->
