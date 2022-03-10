@@ -41,31 +41,58 @@ header h1 {
     
 }
 
- ul {
+ .bottomButtons {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
     text-align: center;
     padding-bottom: 8%;
 }
- ul li 
+.bottomButtons li 
 {
   padding: 13px;
   float:right;
   display: inline;
 }
- ul li a{
+.bottomButtons li a{
     padding: 0.5em;
     border: 2px solid black;
     border-radius: 0.2rem;
     text-decoration: none;
     color:lightblue;
-    background-color: black;;
+    background-color: darkblue;
 }
 
- ul li a:hover{
-  color:blue;
-  background-color: white;
+.bottomButtons li a:hover{
+  color:white;
+  background-color: blue;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+  padding-bottom: 8%;
+}
+ul li 
+{
+padding: 13px;
+float:right;
+display: inline;
+}
+ul li a{
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  color:lightblue;
+  background-color: black;;
+}
+
+ul li a:hover{
+color:blue;
+background-color: white;
 }
 
 section {

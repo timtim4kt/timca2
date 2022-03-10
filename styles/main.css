@@ -38,6 +38,34 @@ header h1 {
   width: 70%;
 }
 
+.bottomButtons {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.bottomButtons li {
+  padding: 13px;
+  float: right;
+  display: inline;
+}
+
+.bottomButtons li a {
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  color: lightblue;
+  background-color: darkblue;
+}
+
+.bottomButtons li a:hover {
+  color: white;
+  background-color: blue;
+}
+
 ul {
   list-style-type: none;
   margin-left: 0;
