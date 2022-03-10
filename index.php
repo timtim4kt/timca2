@@ -43,8 +43,14 @@ $statement3->closeCursor();
 include('includes/header.php');
 ?>
 
+       
+
+
+<section>
+<!-- display a table of records -->
+
 <!-- display a list of categories -->
-<nav>
+<div class="categoryList">
 <ul>
 <?php foreach ($categories as $category) : ?>
 <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
@@ -53,12 +59,7 @@ include('includes/header.php');
 </li>
 <?php endforeach; ?>
 </ul>
-</nav>          
-
-
-<section>
-<!-- display a table of records -->
-<h2><?php echo $category_name; ?></h2>
+</div>   
 <table>
 <tr>
 <th>Image</th>

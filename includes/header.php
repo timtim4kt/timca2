@@ -1,3 +1,6 @@
+<?php
+require_once('database.php');
+?>
 <!-- the head section -->
 <head>
 <title>My PHP CRUD App</title>
@@ -17,6 +20,7 @@
         <?php endforeach; ?>
     </select>
 
+    <h2><?php echo $category_name; ?></h2>
 
 </header>
 
