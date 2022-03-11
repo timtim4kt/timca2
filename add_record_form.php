@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="styles/forms.scss">
 <?php
 require('database.php');
 $query = 'SELECT *
@@ -9,10 +10,8 @@ $categories = $statement->fetchAll();
 $statement->closeCursor();
 ?>
 <!-- the head section -->
+<div class="addDiv">
  <div class="container">
-<?php
-
-?>
         <h1>Add Record</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
@@ -26,23 +25,35 @@ $statement->closeCursor();
             <?php endforeach; ?>
             </select>
             <br>
-            <label>Name:</label>
-            <input type="input" name="name">
+            <input class="userInputs" type="input" name="name"
+            placeholder="Enter Product name"
+            >
             <br>
+            <input class="userInputs" type="input" name="brand"
+            placeholder="Enter Product Brand"
+            >
+            <br> 
+            <input class="userInputs" type="input" name="year"
+            placeholder="Enter Product Year"
+            >
+            <br>
+            <input class="userInputs" type="input" name="price"
+            placeholder="Enter Product Price"
+            >
+            <br>
+            <input class="file" type="file" name="image" accept="image/*" />
+            <br>
+            
+            <div>
+            <input class="addButton" type="submit" value="Add Record">
+            <p> <a class="cancel" href="index.php">Cancel</a></p>
+            </div>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
-            <br>        
-            
-            <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
-            <br>
-            
-            <label>&nbsp;</label>
-            <input type="submit" value="Add Record">
-            <br>
         </form>
-        <p><a href="index.php">View Homepage</a></p>
+        
+        </div>
+            </div>
     <?php
+    
 include('includes/footer.php');
 ?>
