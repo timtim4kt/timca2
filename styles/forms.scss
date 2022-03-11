@@ -56,7 +56,7 @@ background-image: linear-gradient(to top, black 0%, rgb(147, 187, 224) 100%);
     width:55%;
     }
 
-    .container h1{
+    .container .addHeader{
         padding-bottom: 5%;
     }
 
@@ -96,4 +96,65 @@ background-image: linear-gradient(to top, black 0%, rgb(147, 187, 224) 100%);
 
     .cancel:hover{
         background-color: darkred;
+    }
+
+    .editHeader{
+     
+    }
+
+    
+
+    .editDiv
+{
+position: absolute;
+width:100%;
+height:100%;
+background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(to top, black 0%, rgb(147, 187, 224) 100%);
+}
+
+.editContainer {
+	top: 50%;
+	left: 50%;
+	padding-top: 10px;
+	width: 600px;
+	height: 670px;
+	font-family: 'Vibur', cursive;
+	font-family: 'Abel', sans-serif;
+	opacity: .95;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	background-image: linear-gradient(-225deg, black 50%,rgb(147, 187, 224)  50%);
+	text-align: center;
+	box-shadow: 0px 0px 4px 4px grey;
+}
+
+.editContainer .userInputs{
+    font-size: 130%;
+        font-family: 'Abel', sans-serif;
+        color: #5E6472;
+        outline: none;
+        border-radius: 5px 5px 5px 5px;
+    margin:1%;
+        transition: 0.2s linear;
+    box-shadow: inset 0px 0px 2px 2px grey;
+    width:55%;
+    padding-top: 2%;
+    height: 7%;
+    }
+
+    .editContainer .file{
+        font-size: 16px;
+        font-family: 'Abel', sans-serif;
+        color: #5E6472;
+        outline: none;
+        border-radius: 5px 5px 5px 5px;
+        transition: 0.2s linear;
+    box-shadow: inset 0px 0px 2px 2px grey;
+    width:55%;
+    }
+
+    .editContainer .addHeader{
+        padding-bottom: 5%;
     }
