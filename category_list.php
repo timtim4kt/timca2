@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="styles/categories.scss">
 <?php
     require_once('database.php');
 
@@ -10,12 +11,11 @@
     $statement->closeCursor();
 ?>
 <!-- the head section -->
+<body>
+    <div class=bigContainer>
 <div class="container">
-<?php
-include('includes/header.php');
-?>
     <h1>Category List</h1>
-    <table>
+    <table class="catTable">
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
@@ -44,9 +44,8 @@ include('includes/header.php');
         <input type="input" name="name">
         <input id="add_category_button" type="submit" value="Add">
     </form>
-    <br>
-    <p><a href="index.php">Homepage</a></p>
-
-    <?php
-include('includes/footer.php');
-?>
+   
+    <p> <a class="cancel" href="index.php">Cancel</a></p>
+        </div>
+        </div>
+        </body>
