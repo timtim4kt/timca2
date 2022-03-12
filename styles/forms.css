@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.addDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#93bbe0));
+  background-image: linear-gradient(to top, black 0%, #93bbe0 100%);
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  padding-top: 70px;
+  width: 500px;
+  height: 570px;
+  font-family: 'Vibur', cursive;
+  font-family: 'Abel', sans-serif;
+  opacity: .95;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: linear-gradient(-225deg, black 50%, #93bbe0 50%);
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px 4px grey;
+          box-shadow: 0px 0px 4px 4px grey;
+}
+
+.container .userInputs {
+  font-size: 130%;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border-radius: 5px 5px 5px 5px;
+  margin: 1%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: inset 0px 0px 2px 2px grey;
+          box-shadow: inset 0px 0px 2px 2px grey;
+  width: 55%;
+  padding-top: 2%;
+  height: 10%;
+}
+
+.container .file {
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: inset 0px 0px 2px 2px grey;
+          box-shadow: inset 0px 0px 2px 2px grey;
+  width: 55%;
+}
+
+.container .addHeader {
+  padding-bottom: 5%;
+}
+
+.addButton {
+  padding: 7px 10px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius: 0.2rem;
+  color: lightblue;
+  background-color: black;
+  border-color: black;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cancel {
+  padding: 7px 10px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  margin-right: 10px;
+  position: relative;
+  top: 1%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: darkgrey;
+}
+
+.cancel:hover {
+  background-color: darkred;
+}
+
+.editDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#93bbe0));
+  background-image: linear-gradient(to top, black 0%, #93bbe0 100%);
+}
+
+.editContainer {
+  top: 50%;
+  left: 50%;
+  padding-top: 10px;
+  width: 600px;
+  height: 670px;
+  font-family: 'Vibur', cursive;
+  font-family: 'Abel', sans-serif;
+  opacity: .95;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: linear-gradient(-225deg, black 50%, #93bbe0 50%);
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px 4px grey;
+          box-shadow: 0px 0px 4px 4px grey;
+}
+
+.editContainer .userInputs {
+  font-size: 130%;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border-radius: 5px 5px 5px 5px;
+  margin: 1%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: inset 0px 0px 2px 2px grey;
+          box-shadow: inset 0px 0px 2px 2px grey;
+  width: 55%;
+  padding-top: 2%;
+  height: 7%;
+}
+
+.editContainer .file {
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: inset 0px 0px 2px 2px grey;
+          box-shadow: inset 0px 0px 2px 2px grey;
+  width: 55%;
+}
+
+.editContainer .addHeader {
+  padding-bottom: 5%;
+}
+/*# sourceMappingURL=forms.css.map */

@@ -12,7 +12,7 @@ $statement->closeCursor();
 <!-- the head section -->
 <div class="addDiv">
  <div class="container">
-        <h1>Add Record</h1>
+        <h1 class="addHeader">Add Record</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
@@ -26,19 +26,19 @@ $statement->closeCursor();
             </select>
             <br>
             <input class="userInputs" type="input" name="name"
-            placeholder="Enter Product name"
+            placeholder="Enter Product name" required
             >
             <br>
             <input class="userInputs" type="input" name="brand"
-            placeholder="Enter Product Brand"
+            placeholder="Enter Product Brand" required
             >
             <br> 
-            <input class="userInputs" type="input" name="year"
-            placeholder="Enter Product Year"
+            <input class="userInputs" type="number" min="1980" max="2022" name="year"
+            placeholder="Enter Product Year" required
             >
             <br>
-            <input class="userInputs" type="input" name="price"
-            placeholder="Enter Product Price"
+            <input class="userInputs" type="number" min="0" name="price"
+            placeholder="Enter Product Price" pattern='[0-9]+(\.[0-9][0-9]?)?' required
             >
             <br>
             <input class="file" type="file" name="image" accept="image/*" />

@@ -1,0 +1,78 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bigContainer {
+  background-color: #5151f5;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.catTable {
+  width: 30%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  background-color: #d6f1fa;
+  margin-left: 36%;
+}
+
+.cancel {
+  padding: 7px 10px;
+  font-size: 0.875rem;
+  line-height: normal;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody {
+  padding-left: 700px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+thead, tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  border: 3px solid purple;
+}
+/*# sourceMappingURL=categories.css.map */

@@ -23,28 +23,43 @@ $statement->closeCursor();
                    value="<?php echo $records['recordID']; ?>">
 
             <label>Category ID:</label>
-            <input class="userInputs" type="category_id" name="category_id"
-                   value="<?php echo $records['categoryID']; ?>">
+            <input class="userInputs" type="category_id" name="category_id" 
+            placeholder="Enter Category id"
+                   value="<?php echo $records['categoryID']; ?>"
+                   required
+                   >
             <br>
 
             <label>Name:</label>
             <input class="userInputs" type="input" name="name"
-                   value="<?php echo $records['name']; ?>">
+            placeholder="Enter Product Name"
+                   value="<?php echo $records['name']; ?>"
+                   required
+                   >
             <br>
 
             <label>Brand:</label>
             <input class="userInputs" type="input" name="brand"
-                   value="<?php echo $records['brand']; ?>">
+            placeholder="Enter Product Brand"
+                   value="<?php echo $records['brand']; ?>"
+                   required
+                   >
             <br>
 
             <label>Year:</label>
-            <input class="userInputs" type="input" name="year"
-                   value="<?php echo $records['year']; ?>">
+            <input class="userInputs" type="number" min="1980" max="2022" name="year"
+            placeholder="Enter Product Year"
+                   value="<?php echo $records['year']; ?>"
+                   required
+                   >
             <br>
 
             <label>List Price:</label>
-            <input class="userInputs" type="input" name="price"
-                   value="<?php echo $records['price']; ?>">
+            <input class="userInputs" type="number" min="0"  name="price"
+            placeholder="Enter Product Price"
+                   value="<?php echo $records['price']; ?>" pattern='[0-9]+(\.[0-9][0-9]?)?'
+                   required
+                   >
             <br>
 
        
